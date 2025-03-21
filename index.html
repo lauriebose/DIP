@@ -148,7 +148,31 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+This paper presents a novel approach for joint point-
+feature detection and tracking, designed specifically for
+Pixel Processor Array (PPA) vision sensors. Instead of
+standard pixels, PPA sensors consist of thousands of ”pixel-
+processors”, enabling massive parallel computation of vi-
+sual data at the point of light capture. Our approach per-
+forms all computation entirely ”in-pixel”, meaning no raw
+image data need ever leave the sensor for external pro-
+cessing. We introduce a ”Descriptor-In-Pixel” paradigm,
+whereby a feature descriptor is held within the memory of
+each pixel-processor. The PPA’s architecture enables the
+response of every processor’s descriptor, upon the current
+image, to be computed in parallel. This produces a ”de-
+scriptor response map”, which, by generating the correct
+layout of descriptors across the pixel-processors, can be
+used for both point-feature detection and tracking. This
+allows sensor output to be reduced to just sparse feature
+locations and descriptors, giving a greater than 1000× re-
+duction in data transfer compared to image output. Our
+approaches sparse readout and complete utilization of all
+pixel-processors makes it very efficient. Our implementa-
+tion upon the SCAMP-7 PPA prototype runs at over 3000
+FPS (Frames Per Second), tracking point-features reliably
+even under violent motion. This is the first work performing
+point-feature detection and tracking entirely ”in-pixel”.
           </p>
         </div>
       </div>
