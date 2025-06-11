@@ -147,7 +147,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-Abstract coming soon...
+This paper presents a novel approach for joint point-feature detection and tracking, specifically designed for Pixel Processor Array sensors (PPA). Instead of standard pixels, PPA sensors consists of thousands of "pixel-processors", enabling massive parallel computation of visual data at the point of light capture. Our approach performs all computation within these pixel-processors, meaning no raw image data need ever leave the sensor. Instead, sensor output can be reduced to merely the locations of tracked features, and the descriptors of newly initialized features, minimizing data transfer between sensor and external processing. To achieve this we store feature descriptors inside every pixel-processor, adjusting the layout of these descriptors every frame. The PPA's architecture enables us to compute the response of every stored descriptor in parallel. This "response map" is utilized for both detection and tracking of point-features across the pixel-processor array. This approach is very fast, our implementation upon the SCAMP-7 PPA prototype runs at over 3000 FPS (Frames Per Second), tracking point-features reliably even under violent motion. This is the first work performing point-feature detection and tracking entirely "in-pixel".
           </p>
         </div>
       </div>
